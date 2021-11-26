@@ -1,0 +1,33 @@
+﻿<Window x:Class="KanaSpellingTrainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KanaSpellingTrainer"
+        mc:Ignorable="d"
+        Title="假名训练器" Height="200" Width="800" WindowStartupLocation="CenterScreen">
+    <Border  Margin="20" BorderBrush="Gray" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="txtLabel" Text="dd" FontSize="18" TextAlignment="Left" VerticalAlignment="Center"></TextBlock>
+            <Border Grid.Row="1"  BorderBrush="Gray" BorderThickness="0,1,0,1">
+                <WrapPanel VerticalAlignment="Center">
+                    <CheckBox Content="平" x:Name="chePing"></CheckBox>
+                    <CheckBox Content="片" x:Name="chePian" IsChecked="True"></CheckBox>
+                    <CheckBox Content="浊平" x:Name="cheZhuoPing"></CheckBox>
+                    <CheckBox Content="浊片" x:Name="cheZhuoPian"></CheckBox>
+                    <CheckBox Content="半浊平" x:Name="cheBanZhuoPing"></CheckBox>
+                    <CheckBox Content="半浊片" x:Name="cheBanZhuoPian"></CheckBox>
+                    <CheckBox Content="坳平" x:Name="cheAoPing"></CheckBox>
+                    <CheckBox Content="坳片" x:Name="cheAoPian"></CheckBox>
+                    <Button Content="刷词"  Click="Button_Click"></Button>
+                </WrapPanel>
+            </Border>
+            <TextBox x:Name="txtContent" FontSize="18" VerticalContentAlignment="Center" Text="2d" BorderThickness="0" Grid.Row="2" TextChanged="txtContent_TextChanged"></TextBox>
+        </Grid>
+    </Border>
+</Window>

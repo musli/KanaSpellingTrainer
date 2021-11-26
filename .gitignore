@@ -1,0 +1,11 @@
+/src/KanaSpellingTrainer/.vs/KanaSpellingTrainer/v16/*.suo
+Debug
+obj
+bin
+Release
+.msi
+packages
+.suo
+.vs
+.user
+/src/KanaSpellingTrainer/KanaSpellingTrainer/*.user
